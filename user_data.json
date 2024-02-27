@@ -1,0 +1,9 @@
+{
+    "default": {
+        "is_admin": true,
+        "password": "default",
+        "permissions": {
+            "/default/": "read_write"
+        }
+    }
+}
