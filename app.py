@@ -23,7 +23,7 @@ def check_permission(username, file_path):
     if username in user_data:
         permissions = user_data[username].get('permissions', [])
         for path, access in permissions.items():
-            if file_path.startswith(path) and access == 'read':
+            if file_path.startswith(path) and access in ['read', 'read_write']:
                 return True
     return False
 
